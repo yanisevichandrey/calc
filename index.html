@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+
+<div class="main">
+  <form name="form">
+    <input type="text" name="textview">
+  </form>
+
+  <table>
+    <tr>
+      <td><input type="button" value="C" onclick="clean()"></td>
+      <td><input type="button" value="<" onclick="back()"></td>
+      <td><input type="button" value="/" onclick="writeInput('/')"></td>
+      <td><input type="button" value="*" onclick="writeInput('*')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="7" onclick="writeInput(7)"></td>
+      <td><input type="button" value="8" onclick="writeInput(8)"></td>
+      <td><input type="button" value="9" onclick="writeInput(9)"></td>
+      <td><input type="button" value="-" onclick="writeInput('-')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="4" onclick="writeInput(4)"></td>
+      <td><input type="button" value="5" onclick="writeInput(5)"></td>
+      <td><input type="button" value="6" onclick="writeInput(6)"></td>
+      <td><input type="button" value="+" onclick="writeInput('+')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="1" onclick="writeInput(1)"></td>
+      <td><input type="button" value="2" onclick="writeInput(2)"></td>
+      <td><input type="button" value="3" onclick="writeInput(3)"></td>
+      <td rowspan="5" class="equal"><input type="button" value="=" onclick="equal('=')"></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="zero"><input type="button" value="0" onclick="writeInput(0)"></td>
+      <td><input type="button" value="." onclick="writeInput('.')"></td>
+
+    </tr>
+  </table>
+
+</div>
+
+  <script type="text/javascript" src="main.js" defer></script>
+</body>
+</html>
